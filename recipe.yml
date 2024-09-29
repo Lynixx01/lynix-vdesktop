@@ -48,11 +48,6 @@ stages:
         includes:
           - modules/81-install-dependencies.yml
 
-      - name: install-extensions
-        type: includes
-        includes:
-          - modules/82-install-extensions.yml
-
       - name: install-icons-theme
         type: includes
         includes:

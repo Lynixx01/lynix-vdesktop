@@ -18,7 +18,7 @@ button-layout='icon:minimize,maximize,close'
 
 # DEFAULT EXTENSIONS
 [org/gnome/shell]
-enabled-extensions = ['wiggle@mechtifs', 'user-theme@gnome-shell-extensions.gcampax.github.com', 'media-progress@krypion17', 'just-perfection-desktop@just-perfection', 'blur-my-shell@aunetx', 'dash-to-dock@micxgx.gmail.com', 'vertical-workspaces@G-dH.github.com', 'gtk4-ding@smedius.gitlab.com', 'rounded-window-corners@fxgn', 'dm-theme-changer@lynixx01.github.com']
+enabled-extensions = ['wiggle@mechtifs', 'user-theme@gnome-shell-extensions.gcampax.github.com', 'media-progress@krypion17', 'blur-my-shell@aunetx', 'dash-to-dock@micxgx.gmail.com', 'vertical-workspaces@G-dH.github.com', 'gtk4-ding@smedius.gitlab.com', 'rounded-window-corners@fxgn', 'dm-theme-changer@lynixx01.github.com']
 
 
 # EXTENSION SETTINGS: DM Theme Changer
