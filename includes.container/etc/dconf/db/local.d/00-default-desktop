@@ -22,16 +22,14 @@ enabled-extensions = ['wiggle@mechtifs', 'user-theme@gnome-shell-extensions.gcam
 
 
 # EXTENSION SETTINGS: DM Theme Changer
-[dmthemechanger]
-cursor-theme-dark='Adwaita'
+[org/gnome/shell/extensions/dmthemechanger]
 cursor-theme-light='Adwaita'
 darklight-transition-duration=500
 darkmode-toggle-clickdelay=500
-first-time-install=false
 gtk3-theme-dark='adw-gtk3-dark'
 gtk3-theme-light='adw-gtk3'
-icon-theme-dark='Colloid-Dark'
-icon-theme-light='Colloid-Light'
+icon-theme-dark='WhiteSur-light'
+icon-theme-light='WhiteSur-light'
 optimize-darklight-switch-transition=true
 shell-theme-dark='Colloid-Dark'
 shell-theme-light='Colloid-Light'
