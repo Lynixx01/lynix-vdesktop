@@ -1,4 +1,9 @@
 name: install-dependencies
-type: shell
-commands:
-  - apt-get install -y git wget unzip gnome-tweaks gnome-extensions
+type: apt
+source:
+  packages:
+    - git
+    - wget
+    - unzip
+    - gnome-tweaks
+    - gnome-shell-extensions
