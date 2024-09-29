@@ -1,0 +1,4 @@
+name: install-dependencies
+type: shell
+commands:
+  - apt-get install -y git wget unzip gnome-tweaks gnome-extensions

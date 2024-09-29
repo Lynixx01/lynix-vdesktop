@@ -1,0 +1,6 @@
+name: install-icons-theme
+type: shell
+commands:
+  - git clone https://github.com/vinceliuice/WhiteSur-icon-theme.git
+  - cd WhiteSur-icon-theme
+  - bash install.sh -d /usr/share/icons/ -a -b
