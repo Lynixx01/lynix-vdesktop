@@ -3,4 +3,4 @@ Containerfile
 downloads/
 plugins/
 sources/
-vib
+test/
