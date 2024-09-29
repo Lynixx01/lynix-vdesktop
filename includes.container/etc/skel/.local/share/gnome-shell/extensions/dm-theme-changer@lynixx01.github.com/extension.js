@@ -235,7 +235,6 @@ export default class DmThemeChanger extends Extension {
 
   // Extension Settings
   _onSettingsChanged(_, key) {
-    console.log("OPTIMIZATION ENABLED:  " + optimizeTransition.enabled);
     if (this._writeTimeoutId) GLib.Source.remove(this._writeTimeoutId);
     this._settings.delay();
 
@@ -321,6 +320,6 @@ export default class DmThemeChanger extends Extension {
 
   //Utils
   getDarkMode() {
-    return Main.getStyleVariant() === "dark";
+    return this._interfaceSettings.get_string("color-scheme") === "prefer-dark";
   }
 }
