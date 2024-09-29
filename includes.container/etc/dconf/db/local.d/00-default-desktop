@@ -1,0 +1,246 @@
+# DEFAULT APPEARANCE
+[org/gnome/desktop/interface]
+color-scheme = 'prefer-dark'
+document-font-name = 'Inter Variable 11'
+font-name = 'Inter Variable 11'
+gtk-theme = 'adw-gtk3-dark'
+icon-theme = 'WhiteSur-dark'
+
+[org/gnome/desktop/sound]
+theme-name='steam-deck'
+
+[org/gnome/shell/extensions/user-theme]
+name = 'Colloid-Dark'
+
+[org/gnome/desktop/wm/preferences]
+button-layout='icon:minimize,maximize,close'
+
+
+# DEFAULT EXTENSIONS
+[org/gnome/shell]
+enabled-extensions = ['wiggle@mechtifs', 'user-theme@gnome-shell-extensions.gcampax.github.com', 'media-progress@krypion17', 'just-perfection-desktop@just-perfection', 'blur-my-shell@aunetx', 'dash-to-dock@micxgx.gmail.com', 'vertical-workspaces@G-dH.github.com', 'gtk4-ding@smedius.gitlab.com', 'rounded-window-corners@fxgn', 'dm-theme-changer@lynixx01.github.com']
+
+
+# EXTENSION SETTINGS: DM Theme Changer
+[dmthemechanger]
+cursor-theme-dark='Adwaita'
+cursor-theme-light='Adwaita'
+darklight-transition-duration=500
+darkmode-toggle-clickdelay=500
+first-time-install=false
+gtk3-theme-dark='adw-gtk3-dark'
+gtk3-theme-light='adw-gtk3'
+icon-theme-dark='Colloid-Dark'
+icon-theme-light='Colloid-Light'
+optimize-darklight-switch-transition=true
+shell-theme-dark='Colloid-Dark'
+shell-theme-light='Colloid-Light'
+
+
+# EXTENSION SETTINGS: Blur My Shell
+[org/gnome/shell/extensions/blur-my-shell]
+hacks-level = 2
+pipelines = {'pipeline_default': {'name': < 'General' > , 'effects': < [< {'type': < 'native_static_gaussian_blur' > , 'id': < 'effect_33228571058184' > , 'params': < {'radius': < 30 > , 'brightness': < 0.84999999999999998 > , 'unscaled_radius': < 100 > } > } > , < {'type': < 'noise' > , 'id': < 'effect_21413868384370' > , 'params': < {'noise': < 0.5 > , 'lightness': < 0.94999999999999996 > } > } > ] > }, 'pipeline_default_rounded': {'name': < 'Dash' > , 'effects': < [ < {'type': < 'native_static_gaussian_blur' > , 'id': < 'effect_000000000001' > , 'params': < {'radius': < 30 > , 'brightness': < 0.59999999999999998 > , 'unscaled_radius': < 100 > } > } > , < {'type': < 'noise' > , 'id': < 'effect_52497844723646' > , 'params': < {'noise': < 0.5 > , 'lightness': < 1 > } > } > , < {'type': < 'corner' > , 'id': < 'effect_000000000002' > , 'params': < {'radius': < 24 > } > } > ] > }, 'pipeline_05109964914308': {'name': < 'Panel' > , 'effects': < [ < {'type': < 'native_static_gaussian_blur' > , 'id': < 'effect_61740690994223' > , 'params': < {'radius': < 30 > , 'brightness': < 0.84999999999999998 > , 'unscaled_radius': < 100 > } > } > , < {'type': < 'noise' > , 'id': < 'effect_86790494099746' > , 'params': < {'noise': < 0.5 > , 'lightness': < 0.94999999999999996 > } > } > ] > }, 'pipeline_78999348985706': {'name': < 'Overview' > , 'effects': < [ < {'type': < 'native_static_gaussian_blur' > , 'id': < 'effect_33228571058184' > , 'params': < {'radius': < 30 > , 'brightness': < 0.80000000000000004 > , 'unscaled_radius': < 100 > } > } > , < {'type': < 'noise' > , 'id': < 'effect_21413868384370' > , 'params': < {'noise': < 0.5 > , 'lightness': < 0.94999999999999996 > } > } > ] > }}
+settings-version = 2
+
+[org/gnome/shell/extensions/blur-my-shell/appfolder]
+blur = true
+brightness = 0.59999999999999998
+sigma = 30
+style-dialogs = 0
+
+[org/gnome/shell/extensions/blur-my-shell/coverflow-alt-tab]
+pipeline = 'pipeline_default'
+
+[org/gnome/shell/extensions/blur-my-shell/dash-to-dock]
+blur = true
+brightness = 0.59999999999999998
+override-background = false
+pipeline = 'pipeline_default_rounded'
+sigma = 30
+static-blur = true
+style-dash-to-dock = 0
+unblur-in -overview = false
+
+[org/gnome/shell/extensions/blur-my-shell/lockscreen]
+blur = true
+pipeline = 'pipeline_default'
+
+[org/gnome/shell/extensions/blur-my-shell/overview]
+blur = true
+pipeline = 'pipeline_78999348985706'
+style-components = 2
+
+[org/gnome/shell/extensions/blur-my-shell/panel]
+brightness = 1.0
+force-light-text = false
+override-background = false
+override-background-dynamically = true
+pipeline = 'pipeline_05109964914308'
+sigma = 100
+static-blur = false
+style-panel = 0
+unblur-in -overview = true
+
+[org/gnome/shell/extensions/blur-my-shell/screenshot]
+pipeline = 'pipeline_default'
+
+[org/gnome/shell/extensions/blur-my-shell/window-list]
+brightness = 0.59999999999999998
+sigma = 30
+
+
+# EXTENSION SETTINGS: Dash to Dock
+[org/gnome/shell/extensions/dash-to-dock]
+animate-show-apps = true
+apply-custom-theme = false
+background-color = 'rgb(60,60,60)'
+background-opacity = 0.80000000000000004
+click-action = 'minimize'
+custom-background-color = false
+custom-theme-customize-running-dots = false
+custom-theme-running-dots-border-color = 'rgb(255,255,255)'
+custom-theme-running-dots-border-width = 0
+custom-theme-running-dots-color = 'rgb(255,255,255)'
+custom-theme-shrink = false
+customize-alphas = true
+dash-max-icon-size = 48
+disable-overview-on-startup = false
+dock-position = 'BOTTOM'
+height-fraction = 0.90000000000000002
+intellihide-mode = 'MAXIMIZED_WINDOWS'
+isolate-monitors = true
+max-alpha = 0.40000000000000002
+min-alpha = 0.10000000000000001
+multi-monitor = true
+preferred-monitor = -2
+preferred-monitor-by-connector = 'eDP-1'
+running-indicator-dominant-color = false
+running-indicator-style = 'DASHES'
+scroll-action = 'switch-workspace'
+show-apps-at-top = true
+transparency-mode = 'DYNAMIC'
+unity-backlit-items = false
+
+
+# EXTENSION SETTINGS: Dash to Panel
+[org/gnome/shell/extensions/dash-to-panel]
+animate-appicon-hover = true
+animate-appicon-hover-animation-convexity = {'RIPPLE': 2.0, 'PLANK': 1.0, 'SIMPLE': 0.0}
+animate-appicon-hover-animation-extent = {'RIPPLE': 4, 'PLANK': 4, 'SIMPLE': 1}
+animate-appicon-hover-animation-travel = {'SIMPLE': 0.14999999999999999, 'RIPPLE': 0.40000000000000002, 'PLANK': 0.0}
+animate-appicon-hover-animation-type = 'SIMPLE'
+appicon-margin = 1
+appicon-padding = 6
+available-monitors = [0]
+click-action = 'CYCLE-MIN'
+dot-position = 'BOTTOM'
+hotkeys-overlay-combo = 'TEMPORARILY'
+isolate-monitors = true
+leftbox-padding = -1
+middle-click-action = 'LAUNCH'
+panel-anchors = '{"0":"MIDDLE"}'
+panel-element-positions = '{"0":[{"element":"showAppsButton","visible":true,"position":"stackedTL"},{"element":"activitiesButton","visible":true,"position":"stackedTL"},{"element":"leftBox","visible":true,"position":"stackedTL"},{"element":"taskbar","visible":true,"position":"centerMonitor"},{"element":"centerBox","visible":true,"position":"stackedBR"},{"element":"rightBox","visible":true,"position":"stackedBR"},{"element":"dateMenu","visible":true,"position":"stackedBR"},{"element":"systemMenu","visible":true,"position":"stackedBR"},{"element":"desktopButton","visible":true,"position":"stackedBR"}]}'
+panel-lengths = '{"0":100}'
+panel-sizes = '{"0":53}'
+primary-monitor = 0
+shift-click-action = 'MINIMIZE'
+shift-middle-click-action = 'LAUNCH'
+status-icon-padding = -1
+stockgs-keep-dash = false
+stockgs-keep-top-panel = false
+stockgs-panelbtn-click-only = false
+trans-panel-opacity = 0.29999999999999999
+trans-use-custom-opacity = true
+trans-use-dynamic-opacity = false
+tray-padding = -1
+window-preview-title-position = 'TOP'
+
+
+# EXTENSION SETTINGS: Gtk4 Desktop Icons NG
+[org/gnome/shell/extensions/gtk4-ding]
+icon-size = 'standard'
+show-network-volumes = true
+show-second-monitor = false
+
+
+# EXTENSION SETTINGS: Rounded Window Corners Reborn
+[org/gnome/shell/extensions/rounded-window-corners-reborn]
+custom-rounded-corner-settings = @a{sv} {}
+global-rounded-corner-settings = {'padding': < {'left': < uint32 1 > , 'right': < uint32 1 > , 'top': < uint32 1 > , 'bottom': < uint32 1 > } > , 'keep_rounded_corners': < {'maximized': < false > , 'fullscreen': < false > } > , 'border_radius': < uint32 12 > , 'smoothing': < uint32 0 > }
+settings-version = uint32 5
+skip-libadwaita-app = true
+skip-libhandy-app = false
+
+
+# EXTENSION SETTINGS: V-Shell (Vertical Workspaces)
+[org/gnome/shell/extensions/vertical-workspaces]
+animation-speed-factor = 120
+app-display-module = true
+app-favorites-module = true
+app-folder-order = 2
+app-grid-animation = 4
+app-grid-bg-blur-sigma = 100
+app-grid-columns = 0
+app-grid-content = 1
+app-grid-folder-center = true
+app-grid-folder-columns = 0
+app-grid-folder-rows = 0
+app-grid-folder-spacing = 18
+app-grid-names = 0
+app-grid-page-height-scale = 90
+app-grid-page-width-scale = 80
+app-grid-performance = true
+app-grid-spacing = 18
+center-app-grid = true
+center-dash-to-ws = false
+dash-module = false
+dash-position = 2
+delay-startup = true
+highlighting-style = 0
+layout-module = true
+message-tray-module = false
+new-window-focus-fix = false
+new-window-monitor-fix = true
+notification-position = 2
+osd-window-module = false
+overlay-key-module = true
+panel-module = false
+panel-visibility = 0
+search-controller-module = true
+search-fuzzy = true
+search-max-results-rows = 5
+search-module = true
+search-view-animation = 0
+search-width-scale = 100
+secondary-ws-thumbnails-position = 2
+show-bg-in -overview = false
+show-search-entry = false
+show-ws-preview-bg = true
+show-ws-switcher-bg = false
+show-wst-labels = 0
+show-wst-labels-on-hover = false
+smooth-blur-transitions = false
+startup-state = 1
+swipe-tracker-module = false
+win-attention-handler-module = true
+win-preview-show-close-button = true
+win-title-position = 0
+window-manager-module = true
+window-preview-module = true
+workspace-animation = 0
+workspace-animation-module = true
+workspace-module = true
+workspace-switcher-animation = 0
+workspace-switcher-popup-module = true
+ws-max-spacing = 55
+ws-preview-bg-radius = 22
+ws-preview-scale = 100
+ws-sw-popup-h-position = 50
+ws-sw-popup-v-position = 90
+ws-switcher-wraparound = true
+ws-thumbnail-scale = 8
+ws-thumbnail-scale-appgrid = 8
+ws-thumbnails-full = true
+ws-thumbnails-position = 5
+wst-position-adjust = 0

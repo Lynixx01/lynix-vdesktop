@@ -1,0 +1,7 @@
+[Sound Theme]
+Name=Steam Deck
+Comment="a sound theme borrowed from Steam OS system sound."
+Directories=stereo
+
+[stereo]
+OutputProfile=stereo
