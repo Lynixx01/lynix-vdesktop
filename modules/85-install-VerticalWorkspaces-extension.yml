@@ -1,8 +1,8 @@
-- name: vertical-workspaces
-  type: shell
-  source:
-    type: file
-    url: "https://github.com/G-dH/vertical-workspaces/releases/latest/download/vertical-workspacesG-dH.github.com.zip"
-  commands:
-    - mkdir -p /etc/skel/.local/share/gnome-shell/extensions/vertical-workspaces@G-dH.github.com
-    - unzip *.zip -d /etc/skel/.local/share/gnome-shell/extensions/vertical-workspaces@G-dH.github.com/
+name: vertical-workspaces
+type: shell
+source:
+  type: file
+  url: "https://github.com/G-dH/vertical-workspaces/releases/latest/download/vertical-workspacesG-dH.github.com.zip"
+commands:
+  - mkdir -p /etc/skel/.local/share/gnome-shell/extensions/vertical-workspaces@G-dH.github.com
+  - unzip *.zip -d /etc/skel/.local/share/gnome-shell/extensions/vertical-workspaces@G-dH.github.com/
