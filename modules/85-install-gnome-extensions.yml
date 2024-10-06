@@ -1,0 +1,88 @@
+name: install-extensions
+type: shell
+commands:
+  - apt-get install -y gettext just npm node ninja
+modules:
+  # Download from source
+  - name: blur-my-shell
+    type: shell
+    source:
+      type: file
+      url: https://github.com/aunetx/blur-my-shell/releases/latest/download/blur-my-shell@aunetx.shell-extension.zip
+    commands:
+      - mkdir -p /etc/skel/.local/share/gnome-shell/extensions/blur-my-shell@aunetx
+      - unzip *.zip -d /etc/skel/.local/share/gnome-shell/extensions/blur-my-shell@aunetx/
+
+  - name: dash-to-dock
+    type: shell
+    source:
+      type: file
+      url: https://github.com/micheleg/dash-to-dock/releases/latest/download/dash-to-dock@micxgx.gmail.com.zip
+    commands:
+      - mkdir -p /etc/skel/.local/share/gnome-shell/extensions/dash-to-dock@micxgx.gmail.com
+      - unzip *.zip -d /etc/skel/.local/share/gnome-shell/extensions/dash-to-dock@micxgx.gmail.com/
+
+  - name: dm-theme-changer
+    type: shell
+    source:
+      type: file
+      url: https://github.com/Lynixx01/DmThemeChanger/releases/latest/download/dm-theme-changer@lynixx01.github.com.zip
+    commands:
+      - mkdir -p /etc/skel/.local/share/gnome-shell/extensions/dm-theme-changer@lynixx01.github.com
+      - unzip *.zip -d /etc/skel/.local/share/gnome-shell/extensions/dm-theme-changer@lynixx01.github.com/
+
+  - name: vertical-workspaces
+    type: shell
+    source:
+      type: file
+      url: https://github.com/G-dH/vertical-workspaces/releases/latest/download/vertical-workspacesG-dH.github.com.zip
+    commands:
+      - mkdir -p /etc/skel/.local/share/gnome-shell/extensions/vertical-workspaces@G-dH.github.com
+      - unzip *.zip -d /etc/skel/.local/share/gnome-shell/extensions/vertical-workspaces@G-dH.github.com/
+
+  # Building manually from source
+  - name: dash-to-panel
+    type: make
+    buildflags: "install HOME=/etc/skel"
+    source:
+      type: git
+      url: https://github.com/home-sweet-gnome/dash-to-panel
+      branch: master
+      commit: latest
+
+  - name: media-progress
+    type: shell
+    source:
+      type: git
+      url: https://github.com/Krypion17/media-progress
+      branch: main
+      commit: latest
+    commands:
+      - mkdir -p /etc/skel/.local/share/gnome-shell/extensions/media-progress@krypion17/
+      - mv extension.js progressBar.js metadata.json stylesheet.css LICENSE /etc/skel/.local/share/gnome-shell/extensions/media-progress@krypion17/
+
+  - name: rounded-window-corners
+    type: shell
+    source:
+      type: git
+      url: https://github.com/Krypion17/media-progress
+      branch: main
+      commit: latest
+    commands:
+      - just
+      - mkdir -p  /etc/skel/.local/share/gnome-shell/extensions/rounded-window-corners@fxgn
+      - mv ./_build /etc/skel/.local/share/gnome-shell/extensions/rounded-window-corners@fxgn
+
+  - name: gtk4-ding
+    type: meson
+    buildflags: "setup --prefix=/etc/skel/.local/ --localedir=share/gnome-shell/extensions/gtk4-ding@smedius.gilab.com/locale .build"
+    source:
+      type: git
+      url: https://gitlab.com/smedius/desktop-icons-ng
+      branch: main
+      commit: latest
+    modules:
+      - name: install
+        type: shell
+        commands:
+          - ninja -C .build install

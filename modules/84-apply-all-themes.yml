@@ -1,4 +1,0 @@
-name: apply-themes
-type: shell
-commands:
-  - dconf load / > /etc/dconf/db/local.d/00-default-desktop

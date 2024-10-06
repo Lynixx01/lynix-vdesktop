@@ -23,16 +23,16 @@ enabled-extensions = ['wiggle@mechtifs', 'user-theme@gnome-shell-extensions.gcam
 
 # EXTENSION SETTINGS: DM Theme Changer
 [org/gnome/shell/extensions/dmthemechanger]
-cursor-theme-light='Adwaita'
-darklight-transition-duration=500
-darkmode-toggle-clickdelay=500
-gtk3-theme-dark='adw-gtk3-dark'
-gtk3-theme-light='adw-gtk3'
 icon-theme-dark='WhiteSur-light'
 icon-theme-light='WhiteSur-light'
-optimize-darklight-switch-transition=true
+gtk3-theme-dark='adw-gtk3-dark'
+gtk3-theme-light='adw-gtk3'
 shell-theme-dark='Colloid-Dark'
 shell-theme-light='Colloid-Light'
+optimize-darklight-switch-transition=true
+darklight-transition-duration=500
+darkmode-toggle-clickdelay=500
+first-time-install=false
 
 
 # EXTENSION SETTINGS: Blur My Shell
