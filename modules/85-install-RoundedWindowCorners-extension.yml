@@ -1,11 +1,8 @@
 name: rounded-window-corners
 type: shell
-source:
-  type: git
-  url: https://github.com/flexagoon/rounded-window-corners
-  branch: main
-  commit: latest
 commands:
+  - git clone https://github.com/flexagoon/rounded-window-corners.git
+  - cd rounded-window-corners
   - just build
   - mkdir -p  /etc/skel/.local/share/gnome-shell/extensions/rounded-window-corners@fxgn
   - mv ./_build /etc/skel/.local/share/gnome-shell/extensions/rounded-window-corners@fxgn
