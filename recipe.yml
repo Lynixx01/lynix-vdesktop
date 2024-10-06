@@ -50,11 +50,35 @@ stages:
           - gnome-tweaks
           - gnome-shell-extensions
 
-      - name: custom-themes
+      - name: install-dependencies
+        type: apt
+        source:
+        packages:
+          - git
+          - wget
+          - unzip
+          - gettext
+          - just
+          - npm
+          - node
+          - ninja
+
+      # <------------------------------------------------- CUSTOM THEMES ------------------------------------------------->
+      - name: install-extensions
         type: includes
         includes:
-          - modules/80-install-dependencies.yml
-          - modules/84-install-gnome-extensions.yml
+          - 85-install-BlurMyShell-extension.yml
+          - 85-install-DashToDock-extension.yml
+          - 85-install-DashToPanel-extension.yml
+          - 85-install-DmThemeChanger-extension.yml
+          - 85-install-Gtk4Ding-extension.yml
+          - 85-install-MediaProgress-extension.yml
+          - 85-install-RoundedWindowCorners-extension.yml
+          - 85-install-VerticalWorkspaces-extension.yml
+
+      - name: others
+        type: includes
+        includes:
           - modules/90-install-icons-theme.yml
           - modules/95-apply-all-themes.yml
 
