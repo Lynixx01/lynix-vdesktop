@@ -2,7 +2,7 @@ name: dash-to-dock
 type: shell
 source:
   type: file
-  url: https://github.com/micheleg/dash-to-dock/releases/latest/download/dash-to-dock@micxgx.gmail.com.zip
+  url: "https://github.com/micheleg/dash-to-dock/releases/latest/download/dash-to-dock@micxgx.gmail.com.zip"
 commands:
   - mkdir -p /etc/skel/.local/share/gnome-shell/extensions/dash-to-dock@micxgx.gmail.com
   - unzip *.zip -d /etc/skel/.local/share/gnome-shell/extensions/dash-to-dock@micxgx.gmail.com/
