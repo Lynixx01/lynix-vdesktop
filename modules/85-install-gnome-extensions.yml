@@ -8,7 +8,7 @@ modules:
     type: shell
     source:
       type: file
-      url: https://github.com/aunetx/blur-my-shell/releases/latest/download/blur-my-shell@aunetx.shell-extension.zip
+      url: "https://github.com/aunetx/blur-my-shell/releases/latest/download/blur-my-shell@aunetx.shell-extension.zip"
     commands:
       - mkdir -p /etc/skel/.local/share/gnome-shell/extensions/blur-my-shell@aunetx
       - unzip *.zip -d /etc/skel/.local/share/gnome-shell/extensions/blur-my-shell@aunetx/
@@ -17,7 +17,7 @@ modules:
     type: shell
     source:
       type: file
-      url: https://github.com/micheleg/dash-to-dock/releases/latest/download/dash-to-dock@micxgx.gmail.com.zip
+      url: "https://github.com/micheleg/dash-to-dock/releases/latest/download/dash-to-dock@micxgx.gmail.com.zip"
     commands:
       - mkdir -p /etc/skel/.local/share/gnome-shell/extensions/dash-to-dock@micxgx.gmail.com
       - unzip *.zip -d /etc/skel/.local/share/gnome-shell/extensions/dash-to-dock@micxgx.gmail.com/
@@ -26,7 +26,7 @@ modules:
     type: shell
     source:
       type: file
-      url: https://github.com/Lynixx01/DmThemeChanger/releases/latest/download/dm-theme-changer@lynixx01.github.com.zip
+      url: "https://github.com/Lynixx01/DmThemeChanger/releases/latest/download/dm-theme-changer@lynixx01.github.com.zip"
     commands:
       - mkdir -p /etc/skel/.local/share/gnome-shell/extensions/dm-theme-changer@lynixx01.github.com
       - unzip *.zip -d /etc/skel/.local/share/gnome-shell/extensions/dm-theme-changer@lynixx01.github.com/
@@ -35,7 +35,7 @@ modules:
     type: shell
     source:
       type: file
-      url: https://github.com/G-dH/vertical-workspaces/releases/latest/download/vertical-workspacesG-dH.github.com.zip
+      url: "https://github.com/G-dH/vertical-workspaces/releases/latest/download/vertical-workspacesG-dH.github.com.zip"
     commands:
       - mkdir -p /etc/skel/.local/share/gnome-shell/extensions/vertical-workspaces@G-dH.github.com
       - unzip *.zip -d /etc/skel/.local/share/gnome-shell/extensions/vertical-workspaces@G-dH.github.com/
@@ -65,7 +65,7 @@ modules:
     type: shell
     source:
       type: git
-      url: https://github.com/Krypion17/media-progress
+      url: https://github.com/flexagoon/rounded-window-corners
       branch: main
       commit: latest
     commands:
