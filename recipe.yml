@@ -60,8 +60,8 @@ stages:
             - gettext
             - just
             - npm
-            - node
-            - ninja
+            - nodejs
+            - ninja-build
 
       # <------------------------------------------------- CUSTOM THEMES ------------------------------------------------->
       - name: install-extensions
