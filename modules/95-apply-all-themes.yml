@@ -1,6 +1,6 @@
 name: apply-themes
 type: shell
 commands:
-  - sudo dconf update
+  - dconf update
   - DBUS_SESSION_BUS_ADDRESS=unix:path=$(realpath /run/user/*/bus)
   - dconf load / > /etc/dconf/db/local.d/00-default-desktop
