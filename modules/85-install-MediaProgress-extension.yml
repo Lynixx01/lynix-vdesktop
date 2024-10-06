@@ -1,10 +1,7 @@
 name: media-progress
 type: shell
-source:
-  type: git
-  url: https://github.com/Krypion17/media-progress
-  branch: main
-  commit: latest
 commands:
+  - git clone https://github.com/Krypion17/media-progress.git
+  - cd media-progress
   - mkdir -p /etc/skel/.local/share/gnome-shell/extensions/media-progress@krypion17
   - mv extension.js progressBar.js metadata.json stylesheet.css LICENSE /etc/skel/.local/share/gnome-shell/extensions/media-progress@krypion17/
