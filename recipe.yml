@@ -45,21 +45,23 @@ stages:
 
       - name: install-packages
         type: apt
-        packages:
-          - gnome-tweaks
-          - gnome-shell-extensions
+        source:
+          packages:
+            - gnome-tweaks
+            - gnome-shell-extensions
 
       - name: install-dependencies
         type: apt
-        packages:
-          - git
-          - wget
-          - unzip
-          - gettext
-          - just
-          - npm
-          - node
-          - ninja
+        source:
+          packages:
+            - git
+            - wget
+            - unzip
+            - gettext
+            - just
+            - npm
+            - node
+            - ninja
 
       # <------------------------------------------------- CUSTOM THEMES ------------------------------------------------->
       - name: install-extensions
