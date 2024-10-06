@@ -2,5 +2,5 @@ name: apply-themes
 type: shell
 commands:
   - dconf update
-  - [ -e /run/user/*/bus ] && DBUS_SESSION_BUS_ADDRESS=unix:path=$(realpath /run/user/*/bus)
+  - if [ -e /run/user/*/bus ]; then DBUS_SESSION_BUS_ADDRESS=unix:path=$(realpath /run/user/*/bus); fi
   - dconf load / > /etc/dconf/db/local.d/00-default-desktop
