@@ -62,6 +62,7 @@ stages:
             - npm
             - nodejs
             - ninja-build
+            - meson
 
       # <------------------------------------------------- CUSTOM THEMES ------------------------------------------------->
       - name: install-extensions

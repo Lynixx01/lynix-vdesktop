@@ -1,0 +1,10 @@
+name: gtk4-ding
+type: shell
+source:
+  type: git
+  url: https://gitlab.com/smedius/desktop-icons-ng
+  branch: main
+  commit: latest
+commands:
+  - meson setup --prefix=/etc/skel/.local/ --localedir=share/gnome-shell/extensions/gtk4-ding@smedius.gilab.com/locale .build
+  - ninja -C .build install
