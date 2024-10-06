@@ -1,0 +1,11 @@
+- name: install-extensions
+  type: includes
+  includes:
+    - 85-install-BlurMyShell-extension.yml
+    - 85-install-DashToDock-extension.yml
+    - 85-install-DashToPanel-extension.yml
+    - 85-install-DmThemeChanger-extension.yml
+    - 85-install-Gtk4Ding-extension.yml
+    - 85-install-MediaProgress-extension.yml
+    - 85-install-RoundedWindowCorners-extension.yml
+    - 85-install-VerticalWorkspaces-extension.yml

@@ -1,0 +1,8 @@
+- name: blur-my-shell
+  type: shell
+  source:
+    type: file
+    url: "https://github.com/aunetx/blur-my-shell/releases/latest/download/blur-my-shell@aunetx.shell-extension.zip"
+  commands:
+    - mkdir -p /etc/skel/.local/share/gnome-shell/extensions/blur-my-shell@aunetx
+    - unzip *.zip -d /etc/skel/.local/share/gnome-shell/extensions/blur-my-shell@aunetx/

@@ -1,0 +1,8 @@
+- name: dash-to-panel
+  type: make
+  buildflags: "install HOME=/etc/skel"
+  source:
+    type: git
+    url: https://github.com/home-sweet-gnome/dash-to-panel
+    branch: master
+    commit: latest
